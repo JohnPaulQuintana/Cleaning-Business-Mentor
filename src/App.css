@@ -1,0 +1,41 @@
+/* Initial style for the button */
+.pop-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* background: linear-gradient(45deg, #ff6b6b, #f0a500); Example gradient */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    animation: pop 1.5s infinite; /* Infinite animation */
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  /* Define the infinite scaling animation */
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1); /* Make the button grow */
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Add shadow to make it stand out */
+  .pop-btn:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .pop-btn i {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Slightly animate the arrow icon */
+  .pop-btn:hover i {
+    transform: translateX(5px); /* Move the arrow slightly to the right */
+  }
+  
