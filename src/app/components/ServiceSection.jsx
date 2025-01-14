@@ -110,8 +110,8 @@ const ServiceSection = () => {
                         </span>
                     </div>
                     <div className="col-lg-auto">
-                        <a href="#contact" className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
-                            Get a Quote
+                        <a href="#" className="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
+                            Consult Now
                             <i className="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
