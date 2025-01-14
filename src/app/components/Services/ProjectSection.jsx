@@ -3,7 +3,7 @@ import React from 'react';
 const ProjectSection = ({ sectionData }) => {
   return (
 
-    <>
+    <div className=''>
       <section className="hero-section position-relative" style={{
         backgroundImage: 'url(/assets/cbm/header/1.jpg)', // Replace with your hero image path
         backgroundSize: 'cover',
@@ -19,7 +19,7 @@ const ProjectSection = ({ sectionData }) => {
           backgroundColor: 'rgba(0, 0, 0, 0.5)', // Dark overlay (adjust the opacity as needed)
           zIndex: 1,
         }}>
-          <div className="container h-100 d-flex flex-column justify-content-center">
+          <div className="container h-100 d-flex flex-column justify-content-center px-20">
             <div className="row align-items-center h-100">
               <div className="col-lg-7 me-auto">
                 <h1 className="ds-3 mt-3 mb-3 text-white">{sectionData[0].header}</h1>
@@ -33,7 +33,7 @@ const ProjectSection = ({ sectionData }) => {
         </div>
 
       </section>
-      <div className="container mt-8">
+      <div className="container mt-8 px-20">
         <div className="row">
 
           {sectionData.map((course, index) => (
@@ -78,7 +78,7 @@ const ProjectSection = ({ sectionData }) => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

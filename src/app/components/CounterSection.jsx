@@ -18,7 +18,7 @@ const CounterSection = () => {
   }, []);
 
   return (
-    <div className="section-static-1 position-relative overflow-hidden z-0 py-8 bg-900">
+    <div className="section-static-1 position-relative overflow-hidden z-0 py-8 bg-900 px-20">
       <div className="container">
         <div className="inner">
           <div className="row align-items-center justify-content-between">

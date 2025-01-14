@@ -2,11 +2,11 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="section-hero-1 position-relative pt-200 pb-120 overflow-hidden">
+    <section className="section-hero-1 position-relative pt-200 pb-120 overflow-hidden px-20">
       <div className="container position-relative z-3">
         <div className="row">
           <div className="col-lg-6 col-md-12">
-            <span className="text-dark">👋 Hi there, I'm Carolyn</span>
+            <span className="text-dark text-2xl">👋 Hi there, I'm Carolyn</span>
             <h1 className="ds-2 mb-3">
               Cleaning Business <span className="text-[#55018A]"> Mentor</span>
             </h1>
@@ -14,7 +14,7 @@ const HeroSection = () => {
               Founder and CEO of Spotless Cleaning Services, Arellano Services, and Cleaning Business Mentor. This page is packed with products and services tailored for growing cleaning business owners. With years of experience running my own cleaning business and mentoring others worldwide, I understand the challenges you face!
             </p>
             <div>
-            <a href="assets/resume.pdf" className="btn btn-gradient me-2 pop-btn" target="_blank" rel="noopener noreferrer">
+            <a href="assets/resume.pdf" className="btn btn-gradient me-2 pop-btn text-2xl" target="_blank" rel="noopener noreferrer">
               Free 10-Minutes Consultation
               <i className="ri-arrow-right-line ms-2"></i>
             </a>

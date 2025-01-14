@@ -9,7 +9,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="section-contact-1 position-relative pb-lg-250 pb-150 overflow-hidden">
+    <section id="contact" className="section-contact-1 position-relative pb-lg-250 pb-150 overflow-hidden px-20">
       <div className="container position-relative z-1">
         <h3 className="ds-3 mt-3 mb-3 text-[#55018A]">Get in touch</h3>
         <span className="fs-5 fw-medium text-200">
@@ -26,7 +26,7 @@ const ContactSection = () => {
             </div> */}
             {icons.map((icon, index) => (
               <div
-                className="d-flex align-items-center position-relative d-inline-flex"
+                className="d-flex align-items-center mb-4 position-relative d-inline-flex"
                 key={index}
               >
                 <div className="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">

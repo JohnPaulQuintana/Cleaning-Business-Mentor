@@ -35,7 +35,7 @@ const testimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="section-testimonials-1 position-relative pt-120 pb-120 bg-900 overflow-hidden">
+        <section className="section-testimonials-1 position-relative pt-120 pb-120 bg-900 overflow-hidden px-20">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-8">
