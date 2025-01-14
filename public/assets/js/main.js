@@ -266,6 +266,7 @@
             },
         });
     }
+
     function carauselScroll() {
         $('.carouselTicker-left').each(function () {
             $(this).carouselTicker({
@@ -429,7 +430,7 @@
         dataBackground();
         aosAnimation();
         counterState();
-        customSwiper();
+        // customSwiper();
         magnificPopup();
         wowAnimation();
         carauselScroll();

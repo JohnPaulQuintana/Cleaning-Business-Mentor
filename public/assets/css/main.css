@@ -3938,7 +3938,7 @@ textarea.form-control {
 .section-service-1 .single-service-card-1:hover .service-card-details .service-card-icon {
   color: #ffffff;
   border-color: #ffffff !important;
-  transform: rotate(45deg);
+  transform: rotate(180deg);
 }
 
 .button-project .ellipse {

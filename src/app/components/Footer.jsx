@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
           <div className="row text-center py-4">
             <span className="fs-6">
-              © 2025 All Rights Reserved by <span><a href="#" className="text-[#55018A]">Carolyn</a></span>
+              © 2025 All Rights Reserved by <span><a href="#" className="text-[#55018A]">Cleaning Business Mentor</a></span>
             </span>
           </div>
         </div>

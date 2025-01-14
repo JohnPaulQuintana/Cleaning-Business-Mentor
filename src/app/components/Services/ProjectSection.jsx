@@ -20,18 +20,18 @@ const ProjectSection = ({ sectionData }) => {
           zIndex: 1,
         }}>
           <div className="container h-100 d-flex flex-column justify-content-center">
-          <div className="row align-items-center h-100">
-            <div className="col-lg-7 me-auto">
-              <h1 className="ds-3 mt-3 mb-3 text-white">{sectionData[0].header}</h1>
-              <span className="text-2xl fw-medium text-white">
-                Explore the insights and trends shaping the cleaning business industry
-              </span>
+            <div className="row align-items-center h-100">
+              <div className="col-lg-7 me-auto">
+                <h1 className="ds-3 mt-3 mb-3 text-white">{sectionData[0].header}</h1>
+                <span className="text-2xl fw-medium text-white">
+                  Explore the insights and trends shaping the cleaning business industry
+                </span>
+              </div>
             </div>
           </div>
-        </div>
 
         </div>
-        
+
       </section>
       <div className="container mt-8">
         <div className="row">
@@ -64,6 +64,14 @@ const ProjectSection = ({ sectionData }) => {
                     href="#"
                     className="link-overlay position-absolute top-0 start-0 w-100 h-100"
                   ></a>
+                  <button
+                    type="button"
+                    className="bg-[#55018A] p-2 rounded-md text-white mt-2 flex items-center gap-1 justify-center transform transition-all duration-300 hover:scale-110"
+                  >
+                    Buy Now
+                    <i className="ri-arrow-right-line"></i>
+                  </button>
+
                 </div>
               </div>
             </div>

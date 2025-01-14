@@ -1,6 +1,13 @@
 import React from 'react';
 
 const ContactSection = () => {
+  const icons = [
+    { name: "YouTube", iconClass: "ri-youtube-fill", link: "#" },
+    { name: "Facebook", iconClass: "ri-facebook-fill", link: "#" },
+    { name: "Instagram", iconClass: "ri-instagram-fill", link: "#" },
+    { name: "Twitter", iconClass: "ri-twitter-fill", link: "#" },
+  ];
+
   return (
     <section id="contact" className="section-contact-1 position-relative pb-lg-250 pb-150 overflow-hidden">
       <div className="container position-relative z-1">
@@ -12,11 +19,25 @@ const ContactSection = () => {
         </span>
         <div className="row mt-8">
 
-          <div className="col-lg-4 d-flex flex-column">
-            <img src="assets/cbm/PNG/4.png" className='w-full h-[80%]' alt="" />
+          <div className="col-lg-4 grid">
+            {/* <img src="assets/cbm/PNG/4.png" className='w-full h-[80%]' alt="" /> */}
             {/* <div className="position-absolute -bottom-36 start-72 translate-middle z-0 mt-5">
                 <img className="ribbonRotate w-[50%]" src="assets/imgs/testimonials/testimonials-1/decorate.png" alt="zelio" />
             </div> */}
+            {icons.map((icon, index) => (
+              <div
+                className="d-flex align-items-center position-relative d-inline-flex"
+                key={index}
+              >
+                <div className="bg-white icon-flip position-relative icon-shape icon-xxl border-linear-2 border-2 rounded-4">
+                  <i className={`${icon.iconClass} text-primary fs-26`}></i>
+                </div>
+                <div className="ps-3">
+                  <span className="text-400 fs-5">{icon.name}</span>
+                </div>
+                <a href={icon.link} className="position-absolute top-0 start-0 w-100 h-100"></a>
+              </div>
+            ))}
           </div>
 
           <div className="col-lg-7 offset-lg-1 ps-lg-0 pt-5 pt-lg-0">
@@ -71,7 +92,7 @@ const ContactSection = () => {
       </div>
       <div className="scroll-move-right position-absolute bottom-0 start-50 translate-middle-x bg-900 overflow-hidden">
         <div className="wow img-custom-anim-top">
-          <h3 className="stroke fs-280 text-lowercase text-900 mb-0 lh-1">CAROLYN DESIGN</h3>
+          <h3 className="stroke fs-120 text-uppercase text-900 mb-0 lh-1">CLEANING BUSINESS MENTOR</h3>
         </div>
       </div>
     </section>

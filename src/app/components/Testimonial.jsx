@@ -1,7 +1,13 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Correct CSS import for Swiper
-import 'swiper/css/pagination'; // Optional pagination styles
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
+// SwiperCore.use([Autoplay]);
 
 const testimonials = [
     {
@@ -44,12 +50,10 @@ const Testimonials = () => {
                                 <Swiper
                                     spaceBetween={50}
                                     slidesPerView={1}
-                                    loop={true}
+                                    // loop={true}
                                     pagination={{ clickable: true }}
-                                    autoplay={{
-                                        delay: 3000, // time in ms between each slide
-                                        disableOnInteraction: false, // keeps autoplay running after interaction
-                                    }}
+                                    autoplay={true}
+                                    modules={[Navigation, Pagination, Autoplay]} // Pass Autoplay as a module here
                                     className="swiper-wrapper"
                                 >
                                     {testimonials.map((testimonial, index) => (
