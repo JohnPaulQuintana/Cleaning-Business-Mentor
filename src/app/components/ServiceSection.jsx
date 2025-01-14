@@ -155,7 +155,7 @@ const ServiceSection = () => {
                                 <div className='flex gap-4 mt-8'>
                                     <img src={service.img} alt="" className="w-64 rounded-md" />
                                     <div>
-                                        <p className='text-2xl text-white'>{service.description}</p>
+                                        <p className='text-xl tracking-wide text-white'>{service.description}</p>
                                         <Link to={`/services/?filter=${service.param}`} className="btn btn-outline-secondary d-inline-flex align-items-center">
                                             View more
                                         </Link>
